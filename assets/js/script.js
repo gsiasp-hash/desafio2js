@@ -1,4 +1,3 @@
-const nombre = prompt("¿Cuál es tu nombre?");
 const nombreSpan = document.getElementById("nombre");
 nombreSpan.textContent = nombre;
 
