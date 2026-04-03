@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="flex flex-col text-white bg-gray-900 items-center gap-3">
-    <h1 class="text-3xl font-bold text-center">Bienvenido</h1>
+    <h1 class="text-3xl font-bold text-center">Bienvenido <span id="nombre" class="text-indigo-500"></span></h1>
     <div class="container p-5 flex flex-col items-center gap-3">
       <h2 class="text-center text-xl">Reto Imagen</h2>
       <img
@@ -68,9 +68,14 @@
           />
         </div>
       </div>
-      <button id="pedirStickers" class="bg-white text-black font-medium rounded-lg m-3 p-1 px-4 cursor-pointer hover:bg-indigo-400 hover:text-white">Pedir stickers</button>
+      <button
+        id="pedirStickers"
+        class="bg-white text-black font-medium rounded-lg m-3 p-1 px-4 cursor-pointer hover:bg-indigo-400 hover:text-white"
+      >
+        Pedir stickers
+      </button>
       <p class="cantidadStickers text-center">
-        Cantidad de stickers: <span class="cantidad">0</span>
+        <span class="cantidad"></span>
       </p>
     </div>
     <hr class="w-full border-gray-300" />
