@@ -8,7 +8,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="flex flex-col text-white bg-gray-900 items-center gap-3">
-    <h1 class="text-3xl font-bold text-center">Bienvenido <span id="nombre" class="text-indigo-500"></span></h1>
+    <h1 class="text-3xl font-bold text-center">
+      Bienvenido <span id="nombre" class="text-indigo-500"></span>
+    </h1>
     <div class="container p-5 flex flex-col items-center gap-3">
       <h2 class="text-center text-xl">Reto Imagen</h2>
       <img
@@ -33,6 +35,7 @@
           <input
             id="sticker1"
             class="bg-white text-sky border border-gray-300 rounded w-10"
+            min="0"
             type="number"
             placeholder="0"
           />
@@ -49,6 +52,7 @@
             id="sticker2"
             class="border text-sky border-gray-300 bg-white rounded w-10"
             type="number"
+            min="0"
             placeholder="0"
           />
         </div>
@@ -64,6 +68,7 @@
             id="sticker3"
             class="border border-gray-300 bg-white rounded w-10"
             type="number"
+            min="0"
             placeholder="0"
           />
         </div>

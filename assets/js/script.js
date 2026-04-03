@@ -26,5 +26,5 @@ boton.addEventListener("click", () => {
     cantidad.textContent = "Llevas " + totalStickers + " stickers.";
   } else {
     cantidad.textContent = "Llevas demasiados stickers.";
-  } 
+  }
 });
