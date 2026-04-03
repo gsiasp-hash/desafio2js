@@ -1,3 +1,4 @@
+const nombre = prompt("¿Cuál es tu nombre?") || "Desconocido";
 const nombreSpan = document.getElementById("nombre");
 nombreSpan.textContent = nombre;
 // Borde imagen
@@ -41,11 +42,16 @@ verificarPassword.addEventListener("click", () => {
 
   if (valor1 === 9 && valor2 === 1 && valor3 === 1) {
     resultadoPassword.textContent = "Password 1 correcto";
-  } 
-  else if (valor1 === 7 && valor2 === 1 && valor3 === 4) {
+    resultadoPassword.classList.add("text-green-500");
+    resultadoPassword.classList.remove("text-red-500");
+  } else if (valor1 === 7 && valor2 === 1 && valor3 === 4) {
     resultadoPassword.textContent = "Password 2 correcto";
-  }
-  else {
+    resultadoPassword.classList.add("text-green-500");
+    resultadoPassword.classList.remove("text-red-500");
+  } else {
     resultadoPassword.textContent = "Password incorrecto. Inténtalo de nuevo.";
+    resultadoPassword.classList.add("text-red-500");
+    resultadoPassword.classList.remove("text-green-500");
+
   }
 });
