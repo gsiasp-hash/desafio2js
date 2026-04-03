@@ -1,7 +1,8 @@
+// ingresar nombre
 const nombre = prompt("¿Cuál es tu nombre?") || "Desconocido";
 const nombreSpan = document.getElementById("nombre");
 nombreSpan.textContent = nombre;
-// Borde imagen
+// Reto imagen
 const planta = document.querySelector(".planta");
 
 planta.addEventListener("click", () => {
